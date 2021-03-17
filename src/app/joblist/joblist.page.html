@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><ion-icon name="arrow-round-back" routerLink="/mainpage"></ion-icon> Job Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+   
+    <ion-card-content>
+      <ion-list *ngFor="let x of joblist">
+        <ion-item (click)="viewWorkers(this.x.category)">
+          <ion-text>
+            {{ x.category }}
+          </ion-text>
+         
+        </ion-item>
+    
+  
+
+    </ion-card-content>
+   
+   
+    
+  </ion-card>
+
+</ion-content>
+
